@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <header>
+        <hr>
+        <div id="user_info">
+            <B>User name:</B> {{ name }} <br>
+            <B>Email:</B> {{ email }} <br>
+            <B>Phone number:</B> {{ phone_number }}<br>
+        </div>  
+        <hr>
+        
+    </header>
+    <main>
+        <form class="buttons" method="POST" action="/note" >
+            <B>Note</B>
+            <textarea class="typing_note_space" name="note" autofocus>
+               
+            </textarea>
+            <br>
+            <B>Note Title</B>
+            <textarea class="typing_note_space2" name="note_title">
+              
+            </textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Save Note</button>
+        </form>
+        <hr>
+        <form method="POST" action="/note" >
+            
+        </form>
+        <iframe src="/note" width="100%" height="500"></iframe>
+        
+    </main>
+    <footer>
+        <div class="buttons">
+            <form class="buttons" method="POST" action="/email">
+                <button  type="submit" class="btn btn-primary">send as email</button></i>
+            </form>
+            
+            <form class="buttons" method="POST" action="/clear_table">
+                <button type="submit" class="btn btn-primary">clear all</button>
+            </form>
+        </div>
+    </footer>
+    
+{% endblock %}

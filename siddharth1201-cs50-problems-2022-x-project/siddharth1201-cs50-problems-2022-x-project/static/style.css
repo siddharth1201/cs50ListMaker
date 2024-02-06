@@ -1,0 +1,61 @@
+.body{
+    background-color: rgb(233, 238, 236);
+}
+
+.body2{
+    background-color: rgb(140, 104, 139);
+}
+
+
+.table{
+    border: 5;
+    border-color:rgb(10, 62, 80) ;
+    border-radius: 10px;
+    
+    padding:10px;
+    background-color: rgb(232, 245, 233);
+    width:device-width;
+    min-width: 100%;
+    max-width:device-width;
+}
+
+.typing_note_space{
+    width:100%;
+    min-height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px indigo;
+}
+
+.typing_note_space2{
+    width:100%;
+    min-height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px indigo;
+}
+
+.buttons{
+    background: rgba(145, 169, 160, 0.623);
+    padding: 10px;
+    text-align: center;
+}
+
+.form{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px indigo;
+}
+
+#user_info{
+    text-align: center;
+    font-size: larger;
+}
+
+.lr_form{
+    
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+

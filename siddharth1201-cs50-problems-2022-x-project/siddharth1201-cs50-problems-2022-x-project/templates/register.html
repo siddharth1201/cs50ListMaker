@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form class="lr_form" method="POST" action="/register">
+    <div class="form-group">
+        <b>Name:</b><input autofocus type="text" class="form-control" placeholder="Name" name="name">
+    </div> 
+    <div class="form-group">
+        <b>Password:</b><input type="password" class="form-control" placeholder="Password" name="user_password">
+    </div> 
+    <div class="form-group">
+        <b>Confirm Password:</b><input type="password" class="form-control" placeholder="confirm password" name="confirm_user_password">
+    </div>
+    <div class="form-group">
+        <b>Email:</b><input type="text" class="form-control" placeholder="Email" name="email">
+    </div>
+    <div class="form-group">
+        <b>Phone number:</b><input type="text" class="form-control" placeholder="Phone number" name="phone_number">
+    </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+</form>
+
+{% endblock %}

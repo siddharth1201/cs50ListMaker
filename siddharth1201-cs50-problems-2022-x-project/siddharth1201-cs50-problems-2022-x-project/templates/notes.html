@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet">
+    <title>Notes</title>
+</head>
+<body class="body2">
+    <header>
+        <hr>
+        <h1>Notes saved:</h1>
+        <hr>
+    </header>
+    <main>
+   
+    <table class="table" border="5">
+        <th>
+            <tr>
+               
+                <td><B>Note</B></td>
+                <td><B>Note title</B></td>
+            </tr>
+        </th>
+        <tb>
+            {% for row in note_list %}
+            <tr>
+                
+                <td>{{ row["note"] }}</td>
+                <td>{{ row["note_title"] }}</td>
+            </tr>
+            {% endfor %}
+        </tb>
+    </table>
+    
+    
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
